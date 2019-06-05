@@ -1,0 +1,65 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+    </PropertyGroup>
+    <ItemGroup>
+        <!-- Global to the app -->
+        <Compile Include="Oidc.fs" />
+        <Compile Include="Global.fs" />
+        <!-- Info -->
+        <Compile Include="Info/View.fs" />
+        <!-- Counter -->
+        <Compile Include="Counter/Types.fs" />
+        <Compile Include="Counter/State.fs" />
+        <Compile Include="Counter/View.fs" />
+        <!-- Home -->
+        <Compile Include="Home/Types.fs" />
+        <Compile Include="Home/State.fs" />
+        <Compile Include="Home/View.fs" />
+        <!-- Navbar -->
+        <Compile Include="Navbar/View.fs" />
+        <!-- App -->
+        <Compile Include="Types.fs" />
+        <Compile Include="State.fs" />
+        <Compile Include="App.fs" />
+    </ItemGroup>
+    <ItemGroup>
+      <Content Include="..\.editorconfig">
+        <Link>.editorconfig</Link>
+      </Content>
+      <Content Include="..\.gitattributes">
+        <Link>.gitattributes</Link>
+      </Content>
+      <Content Include="..\.gitignore">
+        <Link>.gitignore</Link>
+      </Content>
+      <Content Include="..\NuGet.Config">
+        <Link>NuGet.Config</Link>
+      </Content>
+      <Content Include="..\package.json">
+        <Link>package.json</Link>
+      </Content>
+      <Content Include="..\paket.dependencies">
+        <Link>paket.dependencies</Link>
+      </Content>
+      <Content Include="..\paket.lock">
+        <Link>paket.lock</Link>
+      </Content>
+      <Content Include="..\public\img\favicon-16x16.png">
+        <Link>public\img\favicon-16x16.png</Link>
+      </Content>
+      <Content Include="..\public\img\favicon-32x32.png">
+        <Link>public\img\favicon-32x32.png</Link>
+      </Content>
+      <Content Include="..\sass\main.sass">
+        <Link>sass\main.sass</Link>
+      </Content>
+      <Content Include="..\webpack.config.js">
+        <Link>webpack.config.js</Link>
+      </Content>
+      <Content Include="callback.html" />
+      <Content Include="index.html" />
+      <Content Include="paket.references" />
+    </ItemGroup>
+    <Import Project="..\.paket\Paket.Restore.targets" />
+</Project>
